@@ -1,0 +1,8 @@
+tocTab[tocTab.length] = new Array("0.2:1", "", "model", "EARoot/EA2/EA12.htm", "175.png", "21", "0", "", "Logical diagram0","{5D4697D3-44AA-4681-BD09-ED2E42FB164F}");
+tocTab[tocTab.length] = new Array("0.2:2", "", "Enemy", "EARoot/EA2/EA15.htm", "5.png", "E82", "0", "", "Class0","{81D7E189-5636-42e3-8B0B-E8A7BBDF5676}");
+tocTab[tocTab.length] = new Array("0.2:3", "", "Fight", "EARoot/EA2/EA16.htm", "5.png", "E69", "0", "", "Class0","{CBBEC3D6-C4C3-404e-9393-6742C557C5C5}");
+tocTab[tocTab.length] = new Array("0.2:4", "", "Item", "EARoot/EA2/EA17.htm", "5.png", "E70", "0", "", "Class0","{802A96E7-44F5-4911-B95F-9B4913B7C83F}");
+tocTab[tocTab.length] = new Array("0.2:5", "", "Level", "EARoot/EA2/EA18.htm", "5.png", "E71", "0", "", "Class0","{53EB728C-3DE7-4100-9E99-8416147FB3D8}");
+tocTab[tocTab.length] = new Array("0.2:6", "", "Player", "EARoot/EA2/EA19.htm", "5.png", "E68", "0", "", "Class0","{C7AA982D-1366-47b3-AE21-451CDD047883}");
+tocTab[tocTab.length] = new Array("0.2:7", "", "Skill", "EARoot/EA2/EA20.htm", "5.png", "E72", "0", "", "Class0","{CD591E53-F956-4e59-A5BF-F55AC4590BFE}");
+tocTab[tocTab.length] = new Array("0.2:8", "", "Statics", "EARoot/EA2/EA21.htm", "5.png", "E83", "0", "", "Class0","{21571B85-9697-4691-9620-7B97306093D5}");

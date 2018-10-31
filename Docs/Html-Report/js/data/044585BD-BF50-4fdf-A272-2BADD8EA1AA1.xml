@@ -1,0 +1,5 @@
+tocTab[tocTab.length] = new Array("0.1:1", "", "controller", "EARoot/EA1/EA5.htm", "175.png", "20", "0", "", "Logical diagram0","{939B1AEC-B402-4bba-A00A-443575D25691}");
+tocTab[tocTab.length] = new Array("0.1:2", "", "ActionController", "EARoot/EA1/EA8.htm", "5.png", "E62", "0", "", "Class0","{753B07D4-C9C0-4fe8-A177-0B9267A44430}");
+tocTab[tocTab.length] = new Array("0.1:3", "", "FightController", "EARoot/EA1/EA9.htm", "5.png", "E64", "0", "", "Class0","{91896FFD-A743-404f-B33A-157D553C02AD}");
+tocTab[tocTab.length] = new Array("0.1:4", "", "Main", "EARoot/EA1/EA10.htm", "5.png", "E65", "0", "", "Class0","{6AA57CA1-5E09-4b45-94C8-7CAC1D3E9B05}");
+tocTab[tocTab.length] = new Array("0.1:5", "", "ScreenController", "EARoot/EA1/EA11.htm", "5.png", "E66", "0", "", "Class0","{7CC583EF-9B24-4ec6-A8BC-623552FCBC3F}");
