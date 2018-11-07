@@ -143,10 +143,15 @@ public class MainView implements ViewMaker {
 		);
 		
 		// HIER BUTTON LISTENER ? Oder neue klasse?public class ?
+		m1.setOnMousePressed(event -> {
+			Image img = new Image(getClass().getResourceAsStream("idle.gif"));
+			monster1.setGraphic(new ImageView(img));
+			//TODO:Replace monster with selection
+	    });
+		
 		m2.setOnMousePressed(event -> {
-			m2.setText("Switch Text");
-			
-			Image imageas = new Image(getClass().getResourceAsStream("idle.gif"));
+			Image img = new Image(getClass().getResourceAsStream("test.png"));
+			monster1.setGraphic(new ImageView(img));
 			//TODO:Replace monster with selection
 	    });
 		
