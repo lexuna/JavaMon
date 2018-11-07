@@ -1,9 +1,11 @@
 package net.snortum.javafx.multiscene.controller;
 
+import javafx.scene.Scene;
+import javafx.scene.control.Label;
 import javafx.scene.input.MouseEvent;
+import javafx.scene.layout.BorderPane;
 import javafx.stage.Stage;
-
-import net.snortum.javafx.multiscene.Main;
+import de.lexuna.monster_fighter.controller.Main;
 import net.snortum.javafx.multiscene.model.SceneName;
 
 /**
@@ -13,7 +15,7 @@ import net.snortum.javafx.multiscene.model.SceneName;
 public class MainController {
 
 	private Stage stage;
-	
+
 	/** Inject the stage from {@link Main} */
 	public MainController(Stage stage) {
 		this.stage = stage;
@@ -21,21 +23,26 @@ public class MainController {
 
 	/** Display the first scene */
 	public void handleOnPressButton1(MouseEvent event) {
-		stage.setScene(Main.getScenes().get(SceneName.SCENE1));
+		Scene scene = net.snortum.javafx.multiscene.Main.getScenes().get(SceneName.SCENE1);
+		
+		Label label1 = new Label(Main.getPlayer().getName() + ", " + Main.getPlayer().getHealth());
+		((BorderPane) scene.getRoot()).getChildren().add(label1);
+		stage.setScene(scene);
 	}
-	
+
 	/** Display the second scene */
 	public void handleOnPressButton2(MouseEvent event) {
-		stage.setScene(Main.getScenes().get(SceneName.SCENE2));
+		stage.setScene(net.snortum.javafx.multiscene.Main.getScenes().get(SceneName.SCENE2));
 	}
-	
+
 	/** Display the third scene */
 	public void handleOnPressButton3(MouseEvent event) {
-		stage.setScene(Main.getScenes().get(SceneName.SCENE3));
+		stage.setScene(net.snortum.javafx.multiscene.Main.getScenes().get(SceneName.SCENE3));
 	}
-			//TEST FUNC
+
+	// TEST FUNC
 	public void handleOnPressButton1TEST(MouseEvent event) {
-		stage.setScene(Main.getScenes().get(SceneName.SCENE1));
+		stage.setScene(net.snortum.javafx.multiscene.Main.getScenes().get(SceneName.SCENE1));
 	}
 
 }

@@ -152,7 +152,7 @@ public class MainView implements ViewMaker {
 			Image img = new Image(getClass().getResourceAsStream("idle.gif"));
 			monster1.setGraphic(new ImageView(img));
 			//Main.setPlayer(new Player("Name", img));
-			ViewController.chooseMonsterOne(1);
+			ViewController.chooseMonster(1);
 	    });
 		
 		m2.setOnMousePressed(event -> {
