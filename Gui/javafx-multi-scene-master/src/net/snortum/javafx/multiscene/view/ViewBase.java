@@ -26,19 +26,19 @@ public class ViewBase implements ViewMaker {
 	/**
 	 * Construct a view base.
 	 * 
-	 * @param stage the primary stage from {@link Main}
+	 * @param stage     the primary stage from {@link Main}
 	 * @param labelText the text for the label
-	 * @param handler the "back" button handler
+	 * @param handler   the "back" button handler
 	 */
 	public ViewBase(Stage stage, String labelText, EventHandler<? super MouseEvent> handler) {
 		if (stage == null) {
 			throw new IllegalArgumentException("Stage cannot be null");
 		}
-		
+
 		if (handler == null) {
 			throw new IllegalArgumentException("Handler cannot be null");
 		}
-		
+
 		this.stage = stage;
 		this.labelText = labelText;
 		this.handler = handler;
@@ -51,12 +51,12 @@ public class ViewBase implements ViewMaker {
 		Label label = new Label(labelText);
 		label.setFont(new Font(32));
 		root.setCenter(label);
-		
+
 		Button backButton = new Button("Back"); // DIE ANDEREN SZENEN USEN DAS AUCH < BASE VIEW [....]
 		backButton.setOnMousePressed(handler);
 		Button closeButton = new Button("Close");
 		closeButton.setOnMousePressed(e -> stage.close());
-		
+
 		ButtonBar bbar = new ButtonBar();
 		bbar.setPadding(new Insets(10, 0, 0, 10));
 		bbar.getButtons().addAll(backButton, closeButton);

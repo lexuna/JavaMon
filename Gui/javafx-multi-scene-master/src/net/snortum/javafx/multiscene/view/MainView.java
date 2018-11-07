@@ -26,6 +26,7 @@ import javafx.stage.Stage;
 
 import net.snortum.javafx.multiscene.Main;
 import net.snortum.javafx.multiscene.controller.MainController;
+import net.snortum.javafx.multiscene.controller.ViewController;
 
 //import javafx.scene.image.ImageView;  yea no ?
 import java.io.InputStream;
@@ -81,7 +82,11 @@ public class MainView implements ViewMaker {
 		
 		Button play = new Button("Play"); //Optional oder direkt über m1,m2,m3
 		play.setPrefSize(100, 100);
+		
 		play.setOnMousePressed(e -> controller.handleOnPressButton1(e)); //// START  HERE
+		
+		
+		
 		//play.setOnMousePressed(e -> controller.handleOnPressButton1TEST(e));
 		
 		
@@ -146,13 +151,15 @@ public class MainView implements ViewMaker {
 		m1.setOnMousePressed(event -> {
 			Image img = new Image(getClass().getResourceAsStream("idle.gif"));
 			monster1.setGraphic(new ImageView(img));
-			//TODO:Replace monster with selection
+			//Main.setPlayer(new Player("Name", img));
+			ViewController.chooseMonsterOne(1);
 	    });
 		
 		m2.setOnMousePressed(event -> {
 			Image img = new Image(getClass().getResourceAsStream("test.png"));
 			monster1.setGraphic(new ImageView(img));
 			//TODO:Replace monster with selection
+		//	ViewController.chooseMonsterTwo();
 	    });
 		
 		
